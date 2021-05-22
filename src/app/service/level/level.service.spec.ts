@@ -1,6 +1,7 @@
-import { TestBed } from '@angular/core/testing';
+
 
 import { LevelService } from './level.service';
+import {TestBed} from '@angular/core/testing';
 
 describe('LevelService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
