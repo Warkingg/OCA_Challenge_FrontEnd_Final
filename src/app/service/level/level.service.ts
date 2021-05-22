@@ -12,7 +12,7 @@ export class LevelService {
 
   constructor(private http: HttpClient) { }
 
-  listLevel(level: Level): Observable<Level[]> {
+  listLevel(): Observable<Level[]> {
     return this.http.get<Level[]>(`${API_URL}/levels`);
   }
 

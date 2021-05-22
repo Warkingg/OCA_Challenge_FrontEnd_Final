@@ -10,6 +10,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { TopicListComponent } from './topic/topic-list/topic-list.component';
 import { TopicUpdateComponent } from './topic/topic-update/topic-update.component';
 import { TopicDeleteComponent } from './topic/topic-delete/topic-delete.component';
+import { LevelListComponent } from './level/level-list/level-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TopicDeleteComponent } from './topic/topic-delete/topic-delete.componen
     TopicCreateComponent,
     TopicListComponent,
     TopicUpdateComponent,
-    TopicDeleteComponent
+    TopicDeleteComponent,
+    LevelListComponent
   ],
   imports: [
     BrowserModule,
