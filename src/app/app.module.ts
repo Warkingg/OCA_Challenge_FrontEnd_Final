@@ -11,6 +11,7 @@ import { TopicListComponent } from './topic/topic-list/topic-list.component';
 import { TopicUpdateComponent } from './topic/topic-update/topic-update.component';
 import { TopicDeleteComponent } from './topic/topic-delete/topic-delete.component';
 import { LevelListComponent } from './level/level-list/level-list.component';
+import { TopicDetailsComponent } from './topic/topic-details/topic-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LevelListComponent } from './level/level-list/level-list.component';
     TopicListComponent,
     TopicUpdateComponent,
     TopicDeleteComponent,
-    LevelListComponent
+    LevelListComponent,
+    TopicDetailsComponent
   ],
   imports: [
     BrowserModule,
