@@ -1,5 +1,5 @@
 export interface Answer {
-  id: number;
-  content: string;
+  id?: number;
+  content?: string;
   question?: any;
 }
