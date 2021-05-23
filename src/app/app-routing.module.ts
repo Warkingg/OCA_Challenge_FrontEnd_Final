@@ -4,13 +4,18 @@ import {HomeComponent} from './home/home.component';
 import {QuestionComponent} from './question/question.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
-import {LevelComponent} from './level/level.component';
+import {LevelListComponent} from './level/level-list/level-list.component';
+import {AnswerComponent} from './answer/answer.component';
 
 
 const routes: Routes = [
   {
     path:'levels',
-    component:LevelComponent
+    component: LevelListComponent
+  },
+  {
+    path:'answer',
+    component: AnswerComponent
   },
   {
     path:'login',

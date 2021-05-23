@@ -15,7 +15,7 @@ export class TopicService {
 
   createTopic(topic: Topic): Observable<Topic> {
     return this.http.post<Topic>(`${API_URL}/topics/create`, topic);
-  }topic
+  }
 
   getTopicById(id: number): Observable<Topic>{
     return this.http.get<Topic>(`${API_URL}/topics/find/${id}`);
