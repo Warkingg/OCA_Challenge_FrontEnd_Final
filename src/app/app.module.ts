@@ -3,9 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+
 import { QuestionComponent } from './question/question.component';
-import { AnswerComponent } from './answer/answer.component';
 import { TopicCreateComponent } from './topic/topic-create/topic-create.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -15,21 +14,28 @@ import { TopicDeleteComponent } from './topic/topic-delete/topic-delete.componen
 import { LevelListComponent } from './level/level-list/level-list.component';
 import { TopicDetailsComponent } from './topic/topic-details/topic-details.component';
 import { AnswerCreateComponent } from './answer/answer-create/answer-create.component';
-
+import { AdminComponent } from './admin/admin.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import {HomeComponent} from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     QuestionComponent,
-    AnswerComponent,
     TopicCreateComponent,
     TopicListComponent,
     TopicUpdateComponent,
     TopicDeleteComponent,
     LevelListComponent,
     TopicDetailsComponent,
-    AnswerCreateComponent
+    AnswerCreateComponent,
+    AdminComponent,
+    LoginComponent,
+    RegisterComponent
+
+
   ],
   imports: [
     BrowserModule,
