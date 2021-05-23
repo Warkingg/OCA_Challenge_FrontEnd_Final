@@ -14,6 +14,7 @@ import { TopicUpdateComponent } from './topic/topic-update/topic-update.componen
 import { TopicDeleteComponent } from './topic/topic-delete/topic-delete.component';
 import { LevelListComponent } from './level/level-list/level-list.component';
 import { TopicDetailsComponent } from './topic/topic-details/topic-details.component';
+import { AdminComponent } from './admin/admin.component';
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
@@ -30,9 +31,11 @@ import { RegisterComponent } from './register/register.component';
     TopicDeleteComponent,
     LevelListComponent,
     TopicDetailsComponent,
+    AdminComponent,
     AnswerComponent,
     LoginComponent,
     RegisterComponent
+
   ],
   imports: [
     BrowserModule,
