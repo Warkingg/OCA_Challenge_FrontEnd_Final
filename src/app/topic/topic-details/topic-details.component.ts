@@ -35,5 +35,4 @@ export class TopicDetailsComponent implements OnInit {
       console.log(error);
     })
   }
-
 }
