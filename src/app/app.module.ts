@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { LevelComponent } from './level/level.component';
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
 import { TopicCreateComponent } from './topic/topic-create/topic-create.component';
@@ -17,12 +16,13 @@ import { LevelListComponent } from './level/level-list/level-list.component';
 import { TopicDetailsComponent } from './topic/topic-details/topic-details.component';
 import { AdminComponent } from './admin/admin.component';
 
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LevelComponent,
     QuestionComponent,
     AnswerComponent,
     TopicCreateComponent,
@@ -31,7 +31,11 @@ import { AdminComponent } from './admin/admin.component';
     TopicDeleteComponent,
     LevelListComponent,
     TopicDetailsComponent,
-    AdminComponent
+    AdminComponent,
+    AnswerComponent,
+    LoginComponent,
+    RegisterComponent
+
   ],
   imports: [
     BrowserModule,
