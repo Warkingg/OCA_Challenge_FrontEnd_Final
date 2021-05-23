@@ -16,6 +16,8 @@ import { TopicDeleteComponent } from './topic/topic-delete/topic-delete.componen
 import { LevelListComponent } from './level/level-list/level-list.component';
 import { TopicDetailsComponent } from './topic/topic-details/topic-details.component';
 
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +25,16 @@ import { TopicDetailsComponent } from './topic/topic-details/topic-details.compo
     HomeComponent,
     LevelComponent,
     QuestionComponent,
-    AnswerComponent
+    AnswerComponent,
     TopicCreateComponent,
     TopicListComponent,
     TopicUpdateComponent,
     TopicDeleteComponent,
     LevelListComponent,
-    TopicDetailsComponent
+    TopicDetailsComponent,
+    AnswerComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
