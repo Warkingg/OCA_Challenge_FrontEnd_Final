@@ -7,6 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { LevelComponent } from './level/level.component';
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
+import { TopicCreateComponent } from './topic/topic-create/topic-create.component';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { TopicListComponent } from './topic/topic-list/topic-list.component';
+import { TopicUpdateComponent } from './topic/topic-update/topic-update.component';
+import { TopicDeleteComponent } from './topic/topic-delete/topic-delete.component';
+import { LevelListComponent } from './level/level-list/level-list.component';
+import { TopicDetailsComponent } from './topic/topic-details/topic-details.component';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +24,22 @@ import { AnswerComponent } from './answer/answer.component';
     LevelComponent,
     QuestionComponent,
     AnswerComponent
+    TopicCreateComponent,
+    TopicListComponent,
+    TopicUpdateComponent,
+    TopicDeleteComponent,
+    LevelListComponent,
+    TopicDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
