@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { LevelComponent } from './level/level.component';
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
 import { TopicCreateComponent } from './topic/topic-create/topic-create.component';
@@ -23,7 +22,6 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    LevelComponent,
     QuestionComponent,
     AnswerComponent,
     TopicCreateComponent,
