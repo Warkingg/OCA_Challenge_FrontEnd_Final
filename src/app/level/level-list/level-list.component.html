@@ -1,1 +1,4 @@
-<p>level-list works!</p>
+<div *ngFor="let level of levels">
+  <input type="radio" name="level">
+  <label>{{level.difficulty}}</label>
+</div>
