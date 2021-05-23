@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { LevelComponent } from './level/level.component';
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { AnswerComponent } from './answer/answer.component';
     HomeComponent,
     LevelComponent,
     QuestionComponent,
-    AnswerComponent
+    AnswerComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
