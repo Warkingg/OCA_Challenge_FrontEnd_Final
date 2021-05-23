@@ -23,7 +23,7 @@ import { TopicDetailsComponent } from './topic/topic-details/topic-details.compo
     HomeComponent,
     LevelComponent,
     QuestionComponent,
-    AnswerComponent
+    AnswerComponent,
     TopicCreateComponent,
     TopicListComponent,
     TopicUpdateComponent,

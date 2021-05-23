@@ -18,12 +18,12 @@ export class TopicCreateComponent implements OnInit {
   }
 
   createTopic(form: NgForm) {
-    let newTopic = form.value;
+    const newTopic = form.value;
     this.topicService.createTopic(newTopic).subscribe(() => {
-      console.log("Create Successfully !");
-      this.topic = {}
+      console.log('Create Successfully !');
+      this.topic = {};
     }, error => {
       console.log(error);
-    })
+    });
   }
 }
