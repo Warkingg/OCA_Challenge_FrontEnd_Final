@@ -5,37 +5,32 @@ import {QuestionComponent} from './question/question.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {LevelListComponent} from './level/level-list/level-list.component';
-import {AnswerComponent} from './answer/answer.component';
 
 
 const routes: Routes = [
   {
-    path:'levels',
+    path: 'levels',
     component: LevelListComponent
   },
   {
-    path:'answer',
-    component: AnswerComponent
+    path: 'login',
+component: LoginComponent
   },
   {
-    path:'login',
-component:LoginComponent
+    path: 'question',
+    component: QuestionComponent
   },
   {
-    path:'question',
-    component:QuestionComponent
+    path: 'register',
+    component: RegisterComponent
   },
   {
-    path:'register',
-    component:RegisterComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
-    path:'home',
-    component:HomeComponent
-  },
-  {
-    path:'quiz',
-    component:QuestionComponent
+    path: 'quiz',
+    component: QuestionComponent
   }
 ];
 

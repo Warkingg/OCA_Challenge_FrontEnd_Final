@@ -1,5 +1,7 @@
 export interface Answer {
-  id ?: number;
-  content ?: string;
-  question ?: any;
+  id?: number;
+  content?: string;
+  question?: any;
+  isAnswer?: boolean;
+  selected?: boolean;
 }
