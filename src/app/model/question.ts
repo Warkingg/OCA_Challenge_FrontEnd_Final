@@ -5,4 +5,5 @@ export interface Question {
   questionType ?: any;
   level ?: any;
   quiz ?: any;
+  answered?: boolean;
 }
