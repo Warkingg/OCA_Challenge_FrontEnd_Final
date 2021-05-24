@@ -9,7 +9,7 @@ import {LevelService} from '../../service/level/level.service';
 })
 export class LevelListComponent implements OnInit {
 
-  levels : Level[] = [];
+  levels: Level[] = [];
 
   constructor(private levelService: LevelService) { }
 
@@ -20,6 +20,6 @@ export class LevelListComponent implements OnInit {
   getAllLevel() {
     this.levelService.listLevel().subscribe(levels => {
       this.levels = levels;
-    })
+    });
   }
 }
