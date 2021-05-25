@@ -6,17 +6,20 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
-// import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { LevelListComponent } from './level/level-list/level-list.component';
 import { AdminComponent } from './admin/admin.component';
-
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import {JwtInterceptor} from './interceptor';
 import { Home1Component } from './home1/home1.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LevelComponent } from './admin/level/level.component';
+import { QuestionAdminComponent } from './admin/question-admin/question-admin.component';
+import {MatRadioModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import { Home1Component } from './home1/home1.component';
     AnswerComponent,
     LoginComponent,
     RegisterComponent,
+
     ProfileComponent,
     ChangePasswordComponent,
     Home1Component,
@@ -43,7 +47,10 @@ import { Home1Component } from './home1/home1.component';
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true}
   ],
-  bootstrap: [AppComponent]
-})
+  bootstrap: [AppComponent],
+    LevelComponent,
+    QuestionAdminComponent
+   
+  })
 
 export class AppModule { }

@@ -1,6 +1,8 @@
+import {Difficulty} from './Difficulty';
+
 export interface Level {
   id ?: number;
-  difficulty ?: string;
+  difficulty ?: Difficulty;
   Topic ?: any;
   quiz ?: any;
 }
