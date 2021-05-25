@@ -1,22 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './answer/answer.component';
-import { TopicCreateComponent } from './topic/topic-create/topic-create.component';
-import {HttpClientModule} from '@angular/common/http';
+// import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { TopicListComponent } from './topic/topic-list/topic-list.component';
-import { TopicUpdateComponent } from './topic/topic-update/topic-update.component';
-import { TopicDeleteComponent } from './topic/topic-delete/topic-delete.component';
 import { LevelListComponent } from './level/level-list/level-list.component';
-import { TopicDetailsComponent } from './topic/topic-details/topic-details.component';
+import { AdminComponent } from './admin/admin.component';
 
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import {JwtInterceptor} from './interceptor';
+import { Home1Component } from './home1/home1.component';
 
 @NgModule({
   declarations: [
@@ -24,16 +24,14 @@ import { RegisterComponent } from './register/register.component';
     HomeComponent,
     QuestionComponent,
     AnswerComponent,
-    TopicCreateComponent,
-    TopicListComponent,
-    TopicUpdateComponent,
-    TopicDeleteComponent,
     LevelListComponent,
-    TopicDetailsComponent,
+    AdminComponent,
     AnswerComponent,
     LoginComponent,
     RegisterComponent,
-
+    ProfileComponent,
+    ChangePasswordComponent,
+    Home1Component,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +40,9 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 
