@@ -11,7 +11,7 @@
             <button style="cursor: default" type="button"
                     class="list-group-item d-flex justify-content-between list-group-item-action"
                     *ngFor="let s of topic">
-              <a [routerLink]="['/admin/level/', s.id]">{{s.name}} </a>
+              <a [routerLink]="['/questions/level/', s.id]">{{s.name}} </a>
             </button>
 
             <button type="button" class="list-group-item list-group-item-action active"
@@ -47,11 +47,29 @@
         <div class="col-md-3"></div>
       </div>
 
+      <div style="padding: 16px;">
+        <div class="card">
+
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action active" style="cursor: default;">
+              Level
+            </button>
+            <button style="cursor: default" type="button"
+                    class="list-group-item d-flex justify-content-between list-group-item-action"
+                    *ngFor="let a of l">
+              <a [routerLink]="['/admin/question/', a.id]">{{a.difficulty}} </a>
+            </button>
+
+            <button type="button" class="list-group-item list-group-item-action active"
+                    style="text-align: center;">Choose Level
+            </button>
+          </div>
+        </div>
+      </div>
       <button type="button" class="btn btn-outline-danger" style="margin-left: 20px;">Logout</button>
 
     </div>
   </div>
   <div class="col-lg-9">
-    <router-outlet></router-outlet>
   </div>
 </div>
