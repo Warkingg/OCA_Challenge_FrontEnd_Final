@@ -5,6 +5,9 @@ import {QuestionComponent} from './question/question.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {LevelListComponent} from './level/level-list/level-list.component';
+import {AdminComponent} from './admin/admin.component';
+import {LevelComponent} from './admin/level/level.component';
+import {QuestionAdminComponent} from './admin/question-admin/question-admin.component';
 
 
 const routes: Routes = [
@@ -31,6 +34,18 @@ component: LoginComponent
   {
     path: 'quiz',
     component: QuestionComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
+    path: 'admin/level/:id',
+    component: LevelComponent
+  },
+  {
+    path: 'admin/question/:id',
+    component: QuestionAdminComponent
   }
 ];
 
