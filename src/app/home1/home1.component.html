@@ -1,0 +1,31 @@
+
+<header class="header-area header-sticky">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <nav class="main-nav">
+          <a href="#" class="logo">OCA CHALLENGE</a>
+          <ul class="nav">
+            <li class="scroll-to-section"><a  routerLink="/home" class="active">Home</a></li>
+            <li class="scroll-to-section"><a href="#about">About</a></li>
+            <li class="scroll-to-section"><a href="#services">QUIZ</a></li>
+            <li class="scroll-to-section"><a href="#frequently-question">Register</a></li>
+            <li class="submenu">
+              <a routerLink="/login" *ngIf="!currentUser">Login</a>
+              <!--            <li><a routerLink="#" *ngIf="currentUser">{{currentUser.username}}</a>-->
+              <ul>
+                <li><a *ngIf="currentUser != null" [routerLink]="['/profile',currentUser?.id]">User Profile</a></li>
+                <li><a routerLink="/register">Register</a></li>
+                <li><a href="" data-toggle="modal" data-target="#myModal">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a class='menu-trigger'>
+            <span>Menu</span>
+          </a>>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+

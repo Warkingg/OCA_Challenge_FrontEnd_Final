@@ -248,6 +248,7 @@ a.main-button {
   transition: all 0.3s ease 0s;
 }
 
+
 a.main-button:hover {
   background-color: #0088e8;
 }
@@ -907,8 +908,9 @@ services
 ---------------------------------------------
 */
 #services {
+  padding-top:170px;
   position: relative;
-  padding: 40px 0px 90px 0px;
+  padding: 40px 0px 150px 0px;
   background: rgba(0, 136, 232, 1);
   background: -moz-linear-gradient(
     -45deg,
@@ -1004,7 +1006,7 @@ services
 
 .service-item .service-title {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 22px;
   color: #1e1e1e;
   letter-spacing: 0.7px;
   margin-bottom: 15px;
@@ -1014,10 +1016,10 @@ services
 
 .service-item p {
   font-weight: 400;
-  font-size: 13px;
-  color: #777;
+  font-size: 16px;
+  color: #2a2929;
   letter-spacing: 0.5px;
-  line-height: 25px;
+  line-height: 27px;
   position: relative;
   z-index: 2;
 }
